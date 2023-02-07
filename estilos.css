@@ -263,7 +263,7 @@ nav {
     display: inline-block;
     width: 25px;
     height: 25px;
-    background-image: url(./img/flags/icons8-mexico-48.png);
+    background-image: url(./icons8-mexico-48.png);
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 5px;
@@ -273,15 +273,15 @@ nav {
 
 /*JS Query Class*/
 .lang-selected.change-mx:before {
-    background-image: url(./img/flags/icons8-mexico-48.png);
+    background-image: url(./icons8-mexico-48.png);
 }
 
 .lang-selected.change-en::before {
-    background-image: url(./img/flags/icons8-usa-48.png);
+    background-image: url(./icons8-usa-48.png);
 }
 
 .lang-selected.change-fr:before {
-    background-image: url(./img/flags/icons8-france-48.png);
+    background-image: url(./icons8-france-48.png);
 }
 
 .language ul {
@@ -337,15 +337,15 @@ nav {
 }
 
 a.mx:before {
-    background-image: url(./img/flags/icons8-mexico-48.png);
+    background-image: url(./icons8-mexico-48.png);
 }
 
 a.en:before {
-    background-image: url(./img/flags/icons8-usa-48.png);
+    background-image: url(./icons8-usa-48.png);
 }
 
 a.fr:before {
-    background-image: url(./img/flags/icons8-france-48.png);
+    background-image: url(./icons8-france-48.png);
 }
 
 .language:hover ul {
