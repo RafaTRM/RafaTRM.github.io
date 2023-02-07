@@ -794,7 +794,7 @@ a.fr:before {
     margin: auto;
     overflow: hidden;
     margin-top: 0px;      
-    background-image: url(./img/img/001_ns_3.png);
+    background-image: url(./001_ns_3.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
