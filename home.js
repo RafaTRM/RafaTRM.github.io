@@ -18,53 +18,53 @@ var userBox = document.getElementById("userBox");
 srv1.addEventListener('click',()=>{
     svgCircle.style.strokeDashoffset = "1004";
     home.style.backgroundColor = "000";
-    userBox.style.top = "0px";
+    userBox.style.top = "0vh";
 });
 
 srv2.addEventListener('click',()=>{
     svgCircle.style.strokeDashoffset = "251";
     //home.style.backgroundColor = "WHITE";
-    userBox.style.top = "-785px";
+    userBox.style.top = "-63vh";
 });
 
 srv3.addEventListener('click',()=>{
     svgCircle.style.strokeDashoffset = "502";
     //home.style.backgroundColor = "white";
-    userBox.style.top = "-1388px";
+    userBox.style.top = "-126vh";
 });
 
 srv4.addEventListener('click',()=>{
     svgCircle.style.strokeDashoffset = "753";
     //home.style.backgroundImage = "url(./img/img/manufacturinge.png)";
-    userBox.style.top = "-1991px";
+    userBox.style.top = "-189vh";
 });
 
 srv5.addEventListener('click',()=>{
     svgCircle.style.strokeDashoffset = "1004";
     //home.style.backgroundImage = "url(./img/img/bms3.png)";
-    userBox.style.top = "-2591px";
+    userBox.style.top = "-252vh";
 });
 
 srv6.addEventListener('click',()=>{
     svgCircle.style.strokeDashoffset = "1004";
     //home.style.backgroundImage = "url(./img/img/solucionesgestionnegocios.png)";
-    userBox.style.top = "-3190px";
+    userBox.style.top = "-315vh";
 });
 
 srv7.addEventListener('click',()=>{
     svgCircle.style.strokeDashoffset = "1004";
     //home.style.backgroundImage = "url(./img/img/solucionesgestionnegocios.png)";
-    userBox.style.top = "-3792px";
+    userBox.style.top = "-378vh";
 });
 
 srv8.addEventListener('click',()=>{
     svgCircle.style.strokeDashoffset = "1004";
     //home.style.backgroundImage = "url(./img/img/solucionesgestionnegocios.png)";
-    userBox.style.top = "-4392px";
+    userBox.style.top = "-441vh";
 });
 
 srv9.addEventListener('click',()=>{
     svgCircle.style.strokeDashoffset = "1004";
     //home.style.backgroundImage = "url(./img/img/solucionesgestionnegocios.png)";
-    userBox.style.top = "-4990px";
+    userBox.style.top = "-504vh";
 });

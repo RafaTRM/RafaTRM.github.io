@@ -4,6 +4,8 @@ const slideLeft = document.querySelector(".sge-left-slide");
 const upButton = document.querySelector(".up-button");
 const downButton = document.querySelector(".down-button");
 const slidesLength = slideRight.querySelectorAll("section").length;
+//const slidelLength = slideLeft.querySelectorAll(".sge-ls").length;
+//const sliderLength = slideRight.querySelectorAll(".sge-rs").length;
 
 let activeSliderIndex = 0;
 
