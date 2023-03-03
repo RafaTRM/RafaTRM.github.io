@@ -35,7 +35,7 @@ function sendEmail(name, email, phone, message, subject, sector) {
     Body: `Name: ${name} <br/> Email: ${email} <br/> phone: ${phone} <br/> Asunto: ${subject} <br/> Empresa - Sector: ${sector} <br/> Message: ${message}`
     
     
-}).then ((message) => alert("Su mensaje se envió en chinga. Gracias por ponerse escribirnos , pronto nos pondremos en contacto con Usted.")
+}).then ((message) => alert("Su mensaje ha sido enviado. Pronto, un ejecutivo de cuenta se pondrá en contacto. Gracias por escribirnos.")
 );
     clearInputFields(name, email, phone, message, subject, sector);
 }
