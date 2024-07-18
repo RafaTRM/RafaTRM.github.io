@@ -240,7 +240,6 @@ header::before {
     overflow: hidden;
     margin-top: -8rem;
     height: auto;
-    height: 80vh;
     overflow: hidden;
     background: #cdd704;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #ffffff, #edeff2, #e3e9ee, #d5e1ed, #d1cf60, #d5d236);  /* Chrome 10-25, Safari 5.1-6 */
@@ -264,9 +263,9 @@ header::before {
 .contenido-header {
         position: relative;
         width: 1300px;
-        padding: 0rem 2rem 0 2rem;
+        padding: 0rem 2rem 0 2rem;        
+        height: 60vh;
         height: auto;
-        height: 80vh;
         margin: auto;
         margin-top: 8rem;
         margin-bottom: 0rem;
@@ -278,10 +277,10 @@ header::before {
         .textos-header {
             position: relative;
             width: 90%;
-            height: 80vh;
-            height: 60%;
+            height: 80%;
+            height: 40vh;
             /*height: auto;*/
-            margin-top: 5rem;
+            margin-top: 3%;
             /*left: 2rem;*/
             padding-left: 8%;
             padding-right: 8%;
@@ -311,7 +310,7 @@ header::before {
             color: #f9f9f9;
             font-family: 'Arial Narrow Bold', sans-serif;
             letter-spacing: 0.2rem;
-            margin-top: 6rem;
+            margin-top: 3%;
         }
 
         .textos-header h1 span {
@@ -343,7 +342,7 @@ header::before {
             color: #484A47;
             color: #ffffff;
             font-family: 'Arial Narrow Bold', sans-serif;
-            margin-top: 0rem;
+            margin-top: 0%;
             padding: 0 0;
         }
 
@@ -363,9 +362,10 @@ header::before {
 
     .contactanos {
         /*width: 100%;*/
-        margin-top: 3%;
-        height: 12rem;
+        margin-top: 0%;
+        
         height: 20%;
+        height: 12rem;
         display: flex;
         flex-direction: column;
         width: 100%;
