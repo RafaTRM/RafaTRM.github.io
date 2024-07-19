@@ -239,6 +239,7 @@ header::before {
     width: 100%;    
     overflow: hidden;
     margin-top: -8rem;
+    padding-bottom: 3rem;
     height: auto;
     overflow: hidden;
     background: #cdd704;  /* fallback for old browsers */
@@ -275,12 +276,13 @@ header::before {
     }
 
         .textos-header {
-            position: relative;
+            /*position: relative;*/
             width: 90%;
             height: 80%;
             height: 40vh;
+            height: auto;
             /*height: auto;*/
-            margin-top: 3%;
+            margin-top: 5rem;
             /*left: 2rem;*/
             padding-left: 8%;
             padding-right: 8%;
@@ -310,7 +312,7 @@ header::before {
             color: #f9f9f9;
             font-family: 'Arial Narrow Bold', sans-serif;
             letter-spacing: 0.2rem;
-            margin-top: 3%;
+            margin-top: 4rem;
         }
 
         .textos-header h1 span {
@@ -342,7 +344,7 @@ header::before {
             color: #484A47;
             color: #ffffff;
             font-family: 'Arial Narrow Bold', sans-serif;
-            margin-top: 0%;
+            margin-top: 0;
             padding: 0 0;
         }
 
@@ -357,7 +359,8 @@ header::before {
             color: #f2f2f2;
             font-family: 'Arial Narrow Bold', sans-serif;
             line-height: 2.2rem;
-            margin-top: 5%;
+            margin-top: 8rem;
+            margin-bottom: 4rem;
         }
 
     .contactanos {
@@ -437,13 +440,14 @@ header::before {
 
 .portfolioservs {
     width: 100%;
-    height: 53vh;
+    height: auto;
+    /*height: auto;*/
     background-image: url('./fondo_portfolio.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;
     background-position-y: center;
-
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -453,9 +457,10 @@ header::before {
     position: relative;
     width: 130rem;
     max-width: 130rem;
-    height: inherit;
+    height: 44rem;
+    /*height: auto;*/
     margin: 0 auto;
-    padding: 2rem 2rem;
+    padding: 1rem 0rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -464,14 +469,17 @@ header::before {
 }
 .carslider {
     position: absolute;
+    position: relative;
+    margin-left: 0;
     left: 0;
     inset: 0rem 28rem 0rem 0rem;
     background: transparent;
     border-radius: 0rem;
-    max-width: 130rem   ;
-    padding: 0 2rem;
+    width: 100%;
+    padding: 0 0rem;
     justify-items: center;
     justify-content: center;
+    height: auto;
 }
 .carslider .carslides {
     position: absolute;
@@ -497,11 +505,13 @@ header::before {
 /*.carslider .carslides:nth-child(1), */
 .carslider .carslides:nth-child(1) {
     position: absolute;
-    top: 2vh;
-    left: 0;
-    width: 63%;
+    position: relative;
+    
+    padding: 0rem 0rem;
+    margin: 1rem 1rem;
+    width: 56%;
     height: 100%;
-    height: auto;
+    height: 41rem;
     transform: translateY(0);
     /*box-shadow: 0 2.5rem 5rem rgba(0,0,0, 0.5);*/
     /*background: var(--img);*/
@@ -511,9 +521,8 @@ header::before {
     background-position-x: -50%;
     background-repeat: no-repeat;
     background-position: calc(180%);
-    align-items: center;
-    padding: 0rem 0rem;
-    margin: 2rem 0rem;
+    align-items: left;
+
     
     border-top: 1.5px solid rgb(61, 13, 234);
     border-bottom: 2px solid rgb(61, 13, 234);
@@ -638,22 +647,41 @@ header::before {
 }
 
 .carslider .carslides:nth-child(1) .slidecontent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     opacity: 1;
     height: auto;
     /*max-height: 86%;*/    
-    height: 42vh;
+    height: 98%;
     transform: translateY(0px);
     transition-delay: 0.5s;
-    max-width: 100%;
-    margin: 1rem 1rem;
+    width: 100%;
+    margin: 0.5rem 0.5rem;
     text-align: right;
-    align-content: center;
+    align-items: start;
+    justify-content: start;
+    align-content: start;
     overflow-y: hidden;
     /*overflow-y: scroll;*/
 }
+.carslider .carslides:nth-child(1) .slidecontenth {
+    height: auto;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 0;
+
+}
 .carslider .carslides:nth-child(1) .slidecontentd {
-    height: 26vh;
+    position: relative;
+    /*height: 25rem;*/
+    max-height: 28rem;
     overflow-y: scroll;
+    margin-top: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    width: 100%;
 }
 
 
@@ -679,6 +707,7 @@ header::before {
     color: #025c89;
     font-weight: 600;
     text-align: right;
+    margin-top: 0;
     padding: 0 0.5rem 0 0;
     letter-spacing: normal;
     font-family: 'Arial Narrow Bold', sans-serif;
@@ -692,6 +721,7 @@ header::before {
 
 .carslider .carslides:nth-child(1) .slidecontent h2 {
     margin-top: -0.6rem;
+    margin-bottom: 0;
     padding: 0 0.5rem 0 0;
     font-size: 3.6rem;
     line-height: 3.8rem;
@@ -705,7 +735,7 @@ header::before {
 
 .carslider .carslides:nth-child(1) .slidecontent p {
     font-size: 1.5rem;
-    line-height: 1.65rem;
+    line-height: 1.8rem;
     max-width: 90%;
     text-align: right;
     color: #f9f9f9;
@@ -715,7 +745,8 @@ header::before {
     letter-spacing: normal;
     padding: 0 0;
     margin-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
+    font-family: 'Arial Narrow Bold', sans-serif;
 }
 
 .carslider .carslides:nth-child(1) .slidecontent .subtitle {
@@ -2484,10 +2515,11 @@ header::before {
     
 
     /********Launch*******/
-    /*
+    
     .launch{
-        background-size: ;
-    }*/
+        background-position: 90%;
+        background-size: 150%;
+    }
     
     .contenido-header {
         width: 100%;
@@ -2501,6 +2533,10 @@ header::before {
     .portfolioservs {
         overflow: hidden;
     }
+    .carbuttons {
+        inset: 26.5rem 0rem 0rem 76rem;
+    }
+    /*
     .carslider .carslides:nth-child(1) {
         margin-left: 2%;
         width: 61%;
@@ -2568,12 +2604,12 @@ header::before {
 }
 
 @media screen and (width: 1280px) and (height: 800px) {
-    .portfolioservs {
+   /* .portfolioservs {
         height: 73vh;
     }
     .carslider .carslides:nth-child(1) .slidecontent {
         height: 58vh;
-    }
+    }*/
 }
 
 
@@ -2582,7 +2618,7 @@ header::before {
     
 /*********portfolioservs************/
 .carbuttons {
-    right: 52rem;
+    right: 41rem;
 }
 /*   
 .carslider .carslides:nth-child(1) .slidecontent {
@@ -2701,12 +2737,12 @@ header::before {
     .textos-header p {
         font-size: 1.6rem;
         line-height: 1.8rem;
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
 
 
 
-
+/*
     .portfolioservs {
         height: 600px;
     }
@@ -2715,7 +2751,7 @@ header::before {
         height: 600px;
         max-height: 600px;
     }
-        */
+        
 
         .portfolioservs {
             height: 40vh;
@@ -2723,6 +2759,7 @@ header::before {
         .carslider .carslides:nth-child(1) .slidecontent {
             height: 32vh;
         }
+        */
 }
 
 @media screen and (width: 1024px) and (height: 600px) {
@@ -2766,6 +2803,11 @@ header::before {
     .nav .enlaces-header  a {
         padding: 0 1rem;
     }
+    /*********launch***********/
+    .launch{
+        background-position: 70%;
+        background-size: 180%;
+    }
 
     /*********portfolioservs************/
 
@@ -2800,7 +2842,7 @@ header::before {
         height: inherit;
     }
     .textos-header {
-        height: 70%;
+        height: 75%;
     }
     .textos-header h1 {
         margin-top: 2rem;
@@ -2814,9 +2856,12 @@ header::before {
         margin-top: -0.5rem;
     }
     .textos-header p {
-        font-size: 1.8rem;
-        line-height: 2rem;
+        font-size: 2rem;
+        line-height: 2.2rem;
         margin-top: 6rem;
+    }
+    .contactanos p {
+        margin-top: 3rem;
     }
 
 /*
@@ -2837,7 +2882,7 @@ header::before {
         max-height: 600px;
     }
 
-        */
+      
 
     .portfolioservs {
         height: 40vh;
@@ -2845,6 +2890,7 @@ header::before {
     .carslider .carslides:nth-child(1) .slidecontent {
         height: 32vh;
     }
+    */
 }
 
 /*hasta 900px*/
@@ -2854,7 +2900,7 @@ header::before {
     
     /********Launch 900px*******/
     .launch {
-        height: 65vh;
+        height: 58rem;
         /*background-size: 120%;*/
     }
 
@@ -2882,6 +2928,21 @@ header::before {
         background-size: cover;
         background-image: url('./fondo_portfolio01.png');
     }
+    .carslider .carslides:nth-child(1) {
+        width: 40%;
+    }
+    .carslider .carslides:nth-child(1) .slidecontent h2 {
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
+    .carslider .carslides {
+        top: 10%;
+        transform: translateX(calc(-50% - 8rem));
+    }
+    .carbuttons {
+        inset: 26.5rem 0rem 0rem 56rem;
+    }
+
 /*    .carslider .carslides:nth-child(1) .slidecontent {
         max-width: 78%;
     }
@@ -2956,12 +3017,6 @@ header::before {
         line-height: 2rem;
     }
 
-    .portfolioservs {
-        height: 42vh;
-    }
-    .carslider .carslides:nth-child(1) .slidecontent {
-        height: 32vh;
-    }
 }
 
 
@@ -2998,7 +3053,7 @@ header::before {
     
    
 */
-
+/*
     .portfolioservs {
         height: 600px;
     }
@@ -3006,6 +3061,7 @@ header::before {
         height: 600px;
         max-height: 600px;
     }
+        */
 }
 
 /*hasta 800px*/
@@ -3049,14 +3105,7 @@ header::before {
         max-width: 86%;
     }
 */
-    .carslider .carslides:nth-child(1) {
-        margin-left: 1%;
-        width: 62%;
-    }
-    .carbuttons {
-        right: 55rem;
-        gap: 3rem;
-    }
+  
 
 
     /*****************INICIO PORTAFOLIO SERVICIOS *****************/
@@ -3122,6 +3171,7 @@ header::before {
 
 @media screen and (max-width: 780px) {
     /********portfolioservs*******/
+    /*
     .carslider .carslides {
         margin-left: -6rem;
     }
@@ -3156,7 +3206,12 @@ header::before {
     .launch {
         height: 60vh;
     }
-
+    .textos-header h1 span {
+        font-size: 4.2rem;
+    }
+    .textos-header p {
+        margin-top: 8rem;
+    }
     /*
     .textos-header h1 {
         margin-top: 2rem;
@@ -3172,15 +3227,9 @@ header::before {
         line-height: 3.2rem;
     }
     
-    .textos-header p {
-        width: 90%;
-        max-width: 90%;
-        font-size: 2rem;
-        line-height: 2.4rem;
-        margin-top: 22rem;
-    }
+    
 */
-
+/*
     
     .portfolioservs {
         height: 540px;
@@ -3189,6 +3238,7 @@ header::before {
         height: 600px;
         max-height: 600px;
     }
+        */
     /**********portafolio de servicios*************/
     .serv-head h2 {
         margin-top: 1.4rem;
@@ -3244,23 +3294,27 @@ header::before {
 
   
     /********Launch 700px*******/
-/*
-    .textos-header p {
-        margin-top: 35%;
-    }
-        */
-    /***portfolioservs*****/
-    .carslider .carslides {
-        margin-left: -12rem;
-    }
-    .carslider .carslides:nth-child(1) {
-        width: 50%;
-    }
-    .carbuttons {
-        right: 66rem;
-        gap: 3rem;
+    .launch{
+        height: 56rem;
+        background-position: 70%;
+        background-size: 280%;
     }
 
+    /***portfolioservs*****/
+    .carslider .carslides:nth-child(1) {
+        width: 35%;
+    }
+    .carslider .carslides:nth-child(1) .slidecontent h2 {
+        font-size: 2.6rem;
+        line-height: 3rem;
+    }
+    .carslider .carslides {
+        top: 10%;
+        transform: translateX(calc(-50% - 17rem));
+    }
+    .carbuttons {
+        inset: 26.5rem 0rem 0rem 47rem;
+    }
 }
 
 /*hasta 650px*/
@@ -3294,6 +3348,8 @@ header::before {
         width: 100%;
         max-width: 100%;
         background-image: url(./eAcc11.png);
+        background-size: 260%;
+        background-position: 40%;
     }
     /*.launch {
         
@@ -3315,8 +3371,7 @@ header::before {
     */
     /***********PORTFOLIOS*********/
     .carbuttons {
-        right: 72rem;
-        gap: 0.5rem;
+        gap: 3rem;
     }
     /*
     .carslider .carslides {
@@ -3400,6 +3455,9 @@ header::before {
 
  /****LAUNCH ***********/
   /********Launch 600px*******/
+    .textos-header {
+        height: 30rem;
+    }
     .textos-header h1 {
         margin-top: 4rem;
         font-size: 1.5rem;
@@ -3415,158 +3473,91 @@ header::before {
     .textos-header p {
         /*max-width: 70%;*/
         font-size: 1.45rem;
-        /*margin-top: 30%;*/
+        margin-top: 6rem;
     }
 
     /***portfolioservs*****/
 
-    .carcontainer {
+    .portfolioservs {
         width: 100%;
     }
+    .carcontainer {
+        width: 100%;
+        padding: 1rem 1rem;
+        flex-direction: column;
+        justify-content: start;
+    }
     .carslider {
-        width: 80%;
-        left: 10%;
+        width: 100%;
+        margin: 0 0;
+        padding: 0 0;
+        justify-items: flex-start;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        margin-top: 0;
     }
 
     .carslider .carslides {
-        width: 80%;
-        top: 1rem;
-        transform: translateX(-200%);
         height: 0rem;
         width: 0rem;
+        top: 0;
+        background: transparent;
+        box-shadow: none;
+        /*transition: 0s;*/
     } 
     
     .carslider .carslides:nth-child(1) {
-        top: 0rem;
         width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        justify-self: center;
-        align-self: center;
-        /*border: none;*/
-        border-bottom: 1px solid rgb(61, 13, 234);
-        padding: 0 0;
-
+        height: 37rem;
+        margin: 0rem 0rem;
+        justify-self: flex-start;
+        align-self: flex-start;
+        border: none;
+        /*border-bottom: 3px solid rgb(61, 13, 234);*/
+        padding: 0rem 0rem;
     }
  
     .carslider .carslides:nth-child(1) .slidecontent {
-        height: 42vh;
-        padding-top: 0;
-        margin: 0 0;
+        width: 98%;
+        height: 100%;
+        margin: 0rem 0;
+        padding-bottom: 0;
 
     }
     .carslider .carslides:nth-child(1) .slidecontent h2 {
         font-size: 3rem;
-        line-height: 3.2rem;
+        line-height: 3.4rem;
+    }
+    .carslider .carslides:nth-child(1) .slidecontent p {
+        font-size: 1.6rem;
+        line-height: 2rem;
     }
     .carslider .carslides:nth-child(1) .slidecontentd {
-        height: 20vh;
+        height: 28rem;
     }
     .carbuttons {
-        position: relative;
-        bottom: -3rem;
+        /*position: relative;
+        /*bottom: -3rem;
         align-self: center;
         justify-self: center;
         justify-content: center;
         left: 0%;
         gap: 10rem;
-        width: 100%;
-
+        width: 100%;*/
+        inset: 28.5rem 0rem 0rem 40%;
+        gap: 5rem;
     }
     .carbuttons span {
-        width: 4rem;
-        height: 4rem;
+        width: 3.5rem;
+        height: 3.5rem;
     }
     .carbuttons span::before {
-       
         position: relative;
         width: 1rem;
         height: 1rem;
     }
     
-    /*
-    .carcontainer {
-        width: 99%;
-        max-width: 99%;
-        left: 0.5%;
-        flex-direction: column;
-        padding: 1rem 1rem;
-    }
-    .carslider {
-        width: 99%;
-        max-width: 99%;
-        left: 0.5%;
-    }
-
-    
-    .slidecontent .slidecont {
-        display: none;
-    }
-    .slidecontent {
-        align-content: baseline;
-        margin-bottom: 0;
-        align-items: baseline;
-        transform: translateY(0rem);
-        width: 99%;
-        left: .5%;
-        align-items: center;
-        overflow-y: scroll;
-    }
-    
-    .slidecontent h1 {
-        display: none;
-        
-    }
-    
-    .slidecontent h2 {
-        text-align: center;
-        width: 100%;
-        max-width: 100%;
-        font-size: 1.4rem;
-        line-height: 1.8rem;
-        margin-bottom: 0rem;
-    }
-    
-    .carslider .carslides:nth-child(1) {
-        width: 100%;
-        align-items: start;
-        justify-content: center;
-        padding-left: 0;
-        padding-right: 0;
-        background-image: url("./Dynamics365_BCLogo.png");
-        background-position-x: center;
-        background-position-y: bottom;
-        background-size: 40%;
-        background-repeat: no-repeat;
-    }
-    
-    .carslider .carslides:nth-child(1) .slidecontent {
-        left: 0;
-        top: 3rem;  
-        max-width: 80%;
-        max-height: 39rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    .carslider .carslides:nth-child(1) .slidecontent h2 {
-        font-size: 2rem;
-        line-height: 2.4rem;
-        margin-bottom: 1rem;
-        width: 70%;
-    }
-    .carslider .carslides:nth-child(1) .slidecontent p {
-        font-size: 1.4rem;
-        line-height: 1.8rem;
-        margin-top: 0;
-        margin-right: 0;
-        margin-bottom: 0.5rem;
-        width: 100%;
-    }
-
-    
-    
-    */
     /****portafolio de servicios**********/
 
     .serv-head > h2, .serv-head > p {
@@ -3661,7 +3652,7 @@ header::before {
     }
     .textos-header {
         margin-top: 2rem;
-        height: 60%;
+        height: 70%;
     }
     .textos-header h1 {
         margin-top: 2rem;
@@ -3678,7 +3669,7 @@ header::before {
     .textos-header p {
         font-size: 1.6rem;
         line-height: 1.8rem;
-        margin-top: 3rem;
+        margin-top: 8rem;
     }
 
 
@@ -3701,15 +3692,7 @@ header::before {
     
     
 */
-   .portfolioservs {
-        height: 56vh;
-    }
-    .carslider .carslides:nth-child(1) .slidecontent {
-        height: 42vh;
-    }
-    .carbuttons {
-        bottom: -0rem;
-    }
+   
     
     /**********portafolio de servicios*************/
     .serv-head h2 {
@@ -3728,7 +3711,10 @@ header::before {
 
     
     /*Launch ok*/
-
+    .launch {
+        background-size: 360%;
+        background-position: 45%;
+    }
     .textos-header h1 span {
         font-size: 2.6rem;
         font-weight: 600;
@@ -3784,10 +3770,13 @@ header::before {
     .carslider .carslides:nth-child(1) .slidecontent p {
         max-width: 100%;
     }
-    .carbuttons {
+    
         gap: 80%;
     }
     */
+    .carbuttons {
+        inset: 28.5rem 0rem 0rem 38%;
+    }
 /*********niticias & Preguntas*********/
     .rec-subtitle {
         font-size: 2rem;
@@ -3800,10 +3789,10 @@ header::before {
 /*hasta 450px*/
 @media screen and (width: 480px) and (height:854px) {
 
-    /*
-    .launch {
-        height: 600px;
-    }*/
+    /******launch**********/
+    .textos-header h1 span {
+        font-size: 3.4rem;
+    }
 }
 
 /*hasta 450px*/
@@ -3856,7 +3845,9 @@ header::before {
 
 }
 @media screen and (width: 430px) and (height: 932px) {
-
+    .launch {
+        height: 60rem;
+    }
 
     .contenido-header {
         height: inherit;
@@ -3865,13 +3856,17 @@ header::before {
         margin-top: 2rem;
         height: 75%;
     }
+    .textos-header h1 {
+        margin-top: 2rem;
+    }
     .textos-header h1 span {
-        font-size: 2.8rem;
+        font-size: 3.6rem;
     }
     .textos-header h2 {
         font-size: 2rem;
         margin-top: -0.5rem;
         line-height: 2.2rem;
+        font-weight: 300;
     }
     .textos-header p {
         font-size: 1.6rem;
@@ -3902,6 +3897,7 @@ header::before {
         margin-top: 0;
     }
     */
+    /*
     .portfolioservs {
         height: 605px;
     }
@@ -3915,6 +3911,7 @@ header::before {
     .carbuttons {
         bottom: -10rem;
     }
+        */
 
     /*******portafolio servicios**********/
     .serv-head > h2 {
@@ -3934,9 +3931,10 @@ header::before {
     }
     .textos-header {
         height: 70%;
+        margin-top: 3rem;
     }
     .textos-header h1 span {
-        font-size: 2.6rem;
+        font-size: 3rem;
     }
     .textos-header h2 {
         font-size: 1.8rem;
@@ -3946,7 +3944,7 @@ header::before {
     .textos-header p {
         font-size: 1.6rem;
         line-height: 1.8rem;
-        margin-top: 6rem;
+        margin-top: 5rem;
     }
     .contactanos p {
         margin-top: 0rem;
@@ -3995,15 +3993,7 @@ header::before {
     }
 
     /********portfolioservs************/
-    .portfolioservs {
-        height: 658px;
-    }
-    .carslider .carslides:nth-child(1) .slidecontent {
-        height: 72vh;
-    }
-    .carbuttons {
-        bottom: -12rem;
-    }
+    
     
     
     /**********portafolio de servicios*************/
@@ -4016,7 +4006,9 @@ header::before {
 }
 
 @media screen and (width: 412px) and (height: 915px) {
-    
+    .launch {
+        height: 60rem;
+    }
     .contenido-header {
         height: inherit;
     }
@@ -4024,13 +4016,17 @@ header::before {
         margin-top: 2rem;
         height: 75%;
     }
+    .textos-header h1 {
+        margin-top: 3rem;
+    }
     .textos-header h1 span {
-        font-size: 2.6rem;
+        font-size: 3.4rem;
     }
     .textos-header h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-top: -0.5rem;
-        line-height: 2.2rem;
+        line-height: 2rem;
+        font-weight: 300;
     }
     .textos-header p {
         font-size: 1.6rem;
@@ -4045,10 +4041,7 @@ header::before {
 
 /*******porfolioservs***********/
 
-    .carbuttons {
-        bottom: -4rem;
-    }
-
+   
    
     /**********portafolio de servicios*************/
     .serv-head h2 {
@@ -4060,11 +4053,34 @@ header::before {
     }
 }
 @media screen and (width: 412px) and (height: 914px) {
+    /****launch***/
+    .launch {
+        height: 60rem;
+    }
+    .textos-header {
+        margin-top: 3rem;
+        height: 36rem;
+    }
+    .textos-header h1 {
+        margin-top: 2rem;
+    }
+
+    .textos-header h1 span {
+        font-size: 3.6rem;
+    }
+    .textos-header h2 {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+    .textos-header p {
+        margin-top: 6rem;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+    
     /*******porfolioservs***********/
 
-    .carbuttons {
-        bottom: -5rem;
-    }
+    
 }
 
 
@@ -4096,7 +4112,7 @@ header::before {
         margin-top: -1rem;
     }
     .textos-header P {
-        margin-top: 3rem;
+        margin-top: 8rem;
         font-size: 1.4rem;
         line-height: 1.6rem;
     }
@@ -4129,6 +4145,9 @@ header::before {
         max-width: 72%;
     }
     */
+    .carbuttons {
+        inset: 28.5rem 0rem 0rem 35%;
+    }
 
         /****************news*********/
     .nheader > img {
@@ -4222,21 +4241,25 @@ header::before {
         height: inherit;
     }
     .textos-header {
-        margin-top: 1rem;
+        margin-top: 2rem;
         height: 75%;
     }
+    .textos-header h1 {
+        margin-top: 2rem;
+    }
     .textos-header h1 span {
-        font-size: 2.4rem;
+        font-size: 3rem;
     }
     .textos-header h2 {
         font-size: 1.8rem;
         margin-top: -0.5rem;
         line-height: 2rem;
+        font-weight: 300;
     }
     .textos-header p {
         font-size: 1.6rem;
         line-height: 1.8rem;
-        margin-top: 6rem;
+        margin-top: 5rem;
     }
 
     .contactanos p {
@@ -4244,7 +4267,7 @@ header::before {
     }
 
 
-
+/*
 
     .portfolioservs {
         height: 600px;
@@ -4255,6 +4278,7 @@ header::before {
     .carbuttons {
         bottom: -9rem;
     }
+        */
     
     /**********portafolio de servicios*************/
     .serv-head h2 {
@@ -4267,8 +4291,19 @@ header::before {
 }
 
 @media screen and (width: 375px) and (height: 812px) {
+    .textos-header {
+        margin-top: 3rem;
+    }
+    .textos-header h1 {
+        margin-top: 2rem;
+    }
+    .textos-header h1 span {
+        font-size: 3rem;
+    }
     .textos-header h2 {
+        font-size: 1.6rem;
         line-height: 1.8rem;
+        font-weight: 300;
     }
     /*
     .textos-header {
@@ -4279,13 +4314,7 @@ header::before {
         margin-top: 2rem;
     }
 */
-    .portfolioservs {
-        height: 460px;
-    }
     
-    .carslider .carslides:nth-child(1) .slidecontent {
-        height: 44vh;
-    }
     /*
     .carbuttons {
         bottom: -12rem;
@@ -4326,7 +4355,7 @@ header::before {
 
     
     */
-
+/*
     .portfolioservs {
         height: 600px;
     }
@@ -4340,6 +4369,7 @@ header::before {
     .carbuttons {
         bottom: -9rem;
     }
+    */
     /**********portafolio de servicios*************/
     .serv-head h2 {
         margin-top: 2rem;
@@ -4419,6 +4449,11 @@ header::before {
         font-weight: 300;
     }
 */
+
+    .carbuttons {
+        inset: 28.5rem 0rem 0rem 32%;
+    }
+
 }
 
 @media screen and (width: 360px) and (height: 640px) {
@@ -4429,19 +4464,23 @@ header::before {
     
     .textos-header {
         height: 75%;
+        margin-top: 4rem;
     }
     .textos-header h1 span {
-        font-size: 2.2rem;
+        font-size: 3rem;
+        font-weight: 300;
     }
+    
     .textos-header h2 {
         font-size: 1.8rem;
         line-height: 2rem;
         margin-top: 0;
+        font-weight: 300;
     }
     .textos-header p {
         font-size: 1.6rem;
         line-height: 1.8rem;
-        margin-top: 6rem;
+        margin-top: 4rem;
     }
     .contactanos p {
         margin-top: 4rem;
@@ -4452,7 +4491,7 @@ header::before {
     }
     
 */
-    
+    /*
     .portfolioservs {
         height: 540px;
     }
@@ -4466,7 +4505,7 @@ header::before {
     .carbuttons {
         bottom: -7rem;
     }
-    
+    */
 
 }
 @media screen and (width: 360px) and (height: 740px) {
@@ -4478,20 +4517,22 @@ header::before {
         height: inherit;
     }
     .textos-header {
-        margin-top: 2rem;
+        margin-top: 4rem;
         height: 75%;
     }
     .textos-header h1 span {
-        font-size: 3rem;
+        font-size: 4rem;
+        font-weight: 300;
     }
     .textos-header h2 {
         font-size: 2rem;
         margin-top: -0.5rem;
         line-height: 2.2rem;
+        font-weight: 300;
     }
     .textos-header p {
-        font-size: 1.6rem;
-        line-height: 1.8rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
         margin-top: 10rem;
     }
 
@@ -4500,7 +4541,7 @@ header::before {
     }
 
 
-    
+    /*
     .portfolioservs {
         height: 580px;
     }
@@ -4513,19 +4554,32 @@ header::before {
     .carbuttons {
         bottom: -9rem;
     }
+        */
 }
 
 @media screen and (width: 344px) and (height: 882px) {
     /********launch*********/
+    .launch {
+        height: 60rem;
+    }
+    .textos-header {
+        height: 70%;
+        margin-top: 2rem;
+    }
+    .textos-header h1 {
+        margin-top: 3rem;
+    }
     .textos-header h1 span {
         font-size: 3rem;
     }
     .textos-header h2 {
-        font-size: 2rem;
-        line-height: 2.2rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        font-weight: 300;
     }
-    .textos-header {
-        height: 70%;
+    .textos-header p {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
     }
 }
 
@@ -4541,6 +4595,10 @@ header::before {
     }
     
     /*Launch */
+    .launch{
+        background-size: 440%;
+
+    }
     .textos-header h1 {
         font-size: 1.4rem;
     }
@@ -4551,7 +4609,7 @@ header::before {
         margin-top: 0rem;
     }
     .textos-header p {
-        margin-top: 3rem;
+        margin-top: 5rem;
     }
     /*
     .textos-header {
@@ -4614,15 +4672,19 @@ header::before {
     }
 
     .textos-header {
-        height: 72%;
+        margin-top: 4rem;
+        height: 66%;
+
     }
 
     .textos-header h1 span {
-        font-size: 2.2rem;
+        font-size: 3.2rem;
+        font-weight: 300;
     }
     .textos-header h2 {
         font-size: 1.8rem;
         line-height: 2rem;
+        font-weight: 300;
         margin-top: -0.5rem;
     }
     .textos-header p {
@@ -4648,7 +4710,7 @@ header::before {
     
     */
 
-
+/*
     .portfolioservs {
         height: 560px;
     }
@@ -4661,6 +4723,7 @@ header::before {
     .carbuttons {
         margin-bottom: -10rem;
     }
+        */
 }
 
 @media screen and (width: 320px) and (height: 568px) {
@@ -4701,17 +4764,6 @@ header::before {
     }
 
 
-    
-    .portfolioservs {
-        height: 500px;
-    }
-    .carslider .carslides:nth-child(1) .slidecontent {
-        height: 70vh;
-    }
-    .carbuttons {
-        bottom: -5rem;
-    }
-    
 }
 
 @media screen and (width: 320px) and (height: 533px) {
@@ -4719,7 +4771,16 @@ header::before {
     .launch {
         height: 533px;
     }
-    
+    .textos-header {
+        margin-top: 3rem;
+    }
+    .textos-header h1 {
+        margin-top: 2rem;
+    }
+    .textos-header h1 span {
+        font-size: 2.8rem;
+        font-weight: 300;
+    }
     /*
     .textos-header h1 {
         font-size: 1.8rem;
@@ -4733,7 +4794,7 @@ header::before {
         margin-top: 10rem;
         font-size: 1.2rem;
     }
-    */
+    
     .portfolioservs {
         height: 530px;
     }
@@ -4742,5 +4803,5 @@ header::before {
     }
     .carbuttons {
         bottom: -6rem;
-    }
+    }*/
 }
