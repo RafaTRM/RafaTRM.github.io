@@ -578,7 +578,7 @@ header::before {
     flex-direction: column;
     width: 130rem;
     margin: auto;
-    height: 12rem;
+    height: auto;
     align-items:flex-start;
     margin-bottom: 0;
     padding-left: 2rem;
